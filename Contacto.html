@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nusefa</title>
+    <link rel="icon" href="images/4.png" />
+    <link rel="stylesheet" href="estiloscontacto.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">I.E.P.I.T Nuestra Señora de Fatima</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="paginainicial.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.html">Acerca de Nuestra I.E.</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="serviciosDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Servicios Brindados
+            </a>
+            <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+              <a class="dropdown-item" href="primaria.html">Primaria</a>
+              <a class="dropdown-item" href="secundaria.html">Secundaria</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="serviciosDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Bienestar Integral
+            </a>
+            <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+              <a class="dropdown-item" href="psicologia.html" target="_blank"
+                >Psicologia</a
+              >
+              <a class="dropdown-item" href="trabajosocial.html" target="_blank"
+                >Trabajo Social</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sección del encabezado -->
+    <div class="header-section">
+      <img src="images/4.jpg" alt="Insignia de la institución" />
+      <div>
+        <h1>I.E.P Nuestra Señora de Fátima</h1>
+      </div>
+    </div>
+
+    <!-- Sección de contacto y formulario -->
+    <div class="container mt-5">
+      <div class="form-section">
+        <!-- Información de contacto -->
+        <div class="contact-info">
+          <h2>Contáctenos</h2>
+          <p>Bienvenidos Padres de Familia y Público</p>
+          <p>Horario de Atención: Lunes a Viernes, 8:00 AM - 5:00 PM</p>
+          <br />
+          <h2>Requisitos</h2>
+          <div class="requisitos" style="text-align: left">
+            <p>1. Historial Academico(Boleta de Notas)</p>
+            <p>2. Certificado de Nacimiento</p>
+            <p>3. DNI</p>
+            <p>4. Vacunacion completa</p>
+          </div>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <div class="form-container">
+          <h2>Formulario de Contacto</h2>
+          <div
+            id="error-message"
+            class="alert alert-danger"
+            style="display: none"
+          ></div>
+          <!-- Contenedor para el mensaje de error -->
+          <form id="contact-form" action="enviar_formulario.php" method="POST">
+            <div class="form-group">
+              <label for="inputName">Apellidos y Nombres</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Ingrese sus apellidos y nombres"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Ingrese su email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="inputMessage"
+                rows="3"
+                placeholder="Escriba su mensaje"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mapa de Google -->
+    <div class="container mt-5">
+      <h2>Ubicación</h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.72663914568!2d-75.22429228967958!3d-12.062319946792629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e966a8c17a37b%3A0x78e4bb0202e4e995!2sI.E.T.I.P.%20Nuestra%20Se%C3%B1ora%20de%20F%C3%A1tima!5e0!3m2!1ses-419!2spe!4v1721862818082!5m2!1ses-419!2spe"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <!-- Footer -->
+    <footer class="footer-links">
+      <div class="social-icons">
+        <h2>Redes Sociales</h2>
+        <div>
+          <a
+            href="https://www.facebook.com/30226nusefa"
+            target="_blank"
+            style="margin-right: 15px"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fab fa-youtube" style="margin-right: 15px"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-google"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="images/4.png" alt="Logo de la institución" width="100" />
+      </div>
+      <div class="footer-info">
+        <p>Teléfono: 995-551-375</p>
+        <p>Ubicación: Jr. Los Bosques N° 101, Huancayo, Peru</p>
+        <p>Derechos Reservados &copy; 2024 | IE Nuestra Señora de Fátima</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/your-kit-code.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script>
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Previene el envío del formulario
+
+        // Obtiene los valores de los campos
+        var name = document.getElementById("inputName").value.trim();
+        var email = document.getElementById("inputEmail").value.trim();
+        var message = document.getElementById("inputMessage").value.trim();
+
+        // Verifica
+        if (name === "" || email === "" || message === "") {
+          var errorMessage = "Por favor complete todos los campos.";
+          var errorContainer = document.getElementById("error-message");
+          errorContainer.textContent = errorMessage;
+          errorContainer.style.display = "block"; // Muestra el mensaje de error
+
+          // Oculta el mensaje
+          setTimeout(function () {
+            errorContainer.style.display = "none";
+          }, 10000);
+        } else {
+          alert("Formulario enviado con éxito!");
+          this.submit();
+        }
+      });
+  </script>
+</html>

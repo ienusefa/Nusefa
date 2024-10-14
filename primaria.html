@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusefa - Primaria</title>
+    <link rel="icon" href="images/4.png">
+    <link rel="stylesheet" href="estilosacerca.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<style>
+    #carouselPrimaria {
+        max-width: 75%; 
+        margin: 0 auto; 
+    }
+
+    #carouselPrimaria .carousel-inner img {
+        height: 400px; 
+        object-fit: cover; 
+    }
+</style>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#" style="display: flex;display: flex; gap: 20px;">
+      <img src="images/4.png" alt="Imagen" width="100" height="auto" style="display: block; margin: 0 auto; width: 55px;">
+            <span style="align-self: center;">
+              I.E.P.I.T Nuestra Señora de Fatima
+            </span> 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="paginainicial.html">Inicio <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acerca.html">Acerca de Nuestra I.E.</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios Brindados
+          </a>
+          <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+            <a class="dropdown-item" href="primaria.html" target="_blank">Primaria</a>
+            <a class="dropdown-item" href="secundaria.html">Secundaria</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Bienestar Integral
+          </a>
+          <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+            <a class="dropdown-item" href="psicologia.html" target="_blank">Psicologia</a>
+            <a class="dropdown-item" href="trabajosocial.html" target="_blank">Trabajo Social</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+    <!-- Sección de Primaria -->
+    <section id="primaria" class="py-5">
+        <div class="container">
+            <!-- Título de la sección -->
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="section-title">Primaria</h2>
+                    <p class="section-subtitle">Formando los cimientos del futuro</p>
+                </div>
+            </div>
+
+            <!-- Descripción General -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Descripción General</h3>
+                    <p>La educación primaria en Nusefa es fundamental para el desarrollo integral de los estudiantes. Nos enfocamos en inculcar valores, desarrollar habilidades cognitivas y preparar a los alumnos para los desafíos futuros.</p>
+                </div>
+            </div>
+
+            <!-- Objetivos Académicos -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Objetivos Académicos</h3>
+                    <ul>
+                        <li>Desarrollar habilidades de pensamiento crítico y resolución de problemas.</li>
+                        <li>Fomentar valores como el respeto, la responsabilidad y la solidaridad.</li>
+                        <li>Preparar a los estudiantes para la transición a la educación secundaria.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Plan de Estudios -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Plan de Estudios</h3>
+                    <p>El plan de estudios de primaria incluye:</p>
+                    <ul>
+                        <li>Matemáticas</li>
+                        <li>Lenguaje y Comunicación</li>
+                        <li>Ciencias Naturales</li>
+                        <li>Historia y Geografía</li>
+                        <li>Educación Física y Deportes</li>
+                        <li>Arte y Música</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Servicios de Apoyo -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Servicios de Apoyo</h3>
+                    <p>Nuestros estudiantes cuentan con servicios de tutoría, apoyo psicológico y trabajo social, diseñados para atender sus necesidades durante su etapa escolar en primaria.</p>
+                </div>
+            </div>
+            <section id="bienestar-integral">
+                <div class="container">
+                  <div class="row mt-4">
+                    <div class="col-md-6">
+                      <h3>Apoyo Psicológico</h3>
+                      <p>Descripción de los servicios de Psicología...</p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoPsicologiaModal">
+                        Ver Video
+                      </button>
+                    </div>
+                    <div class="col-md-6">
+                      <h3>Trabajo Social</h3>
+                      <p>Descripción de las intervenciones del Trabajo Social...</p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoTrabajoSocialModal">
+                        Ver Video
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              
+                  <!-- Modal para Apoyo Psicológico -->
+                  <div class="modal fade" id="videoPsicologiaModal" tabindex="-1" role="dialog" aria-labelledby="videoPsicologiaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="videoPsicologiaModalLabel">Apoyo Psicológico</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="videoPsicologia" class="embed-responsive-item" src="https://www.youtube.com/embed/SGlYpHP3a9U?si=3s_rhWVCMWftd5MX" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Modal para Trabajo Social -->
+                  <div class="modal fade" id="videoTrabajoSocialModal" tabindex="-1" role="dialog" aria-labelledby="videoTrabajoSocialModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="videoTrabajoSocialModalLabel">Trabajo Social</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="videoTrabajoSocial" class="embed-responsive-item" src="https://www.youtube.com/embed/JYwgggiae-Y?si=R4WFft8gjf8Avw7ssq" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+
+            <!-- Galería de Imágenes -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Galería de Imágenes</h3>
+                    <br>
+                    <div id="carouselPrimaria" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/ejemplo.jpg" class="d-block w-100" alt="Actividad 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ejemplo1.jpg" class="d-block w-100" alt="Actividad 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ejemplo2.jpg" class="d-block w-100" alt="Actividad 3">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselPrimaria" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselPrimaria" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonios -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Testimonios</h3>
+                    <blockquote class="blockquote">
+                        <p>"La educación en primaria ha sido excepcional. Mi hijo ha crecido en conocimiento y valores."</p>
+                        <footer class="blockquote-footer">Padre de familia</footer>
+                    </blockquote>
+                    <blockquote class="blockquote">
+                        <p>"Me encanta mi escuela, los profesores son muy amables y me enseñan mucho."</p>
+                        <footer class="blockquote-footer">Alumno de 3° grado</footer>
+                    </blockquote>
+                    <blockquote class="blockquote">
+                        <p>"Me encanta mucho la escuela, me gusta mucho enseñar y compartir con los estudiantes dentro de las aulas."</p>
+                        <footer class="blockquote-footer">Docente de Primaria</footer>
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Contacto -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Contacto</h3>
+                    <p>Para más información sobre la sección de primaria, puedes contactarnos a través de:</p>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> Email: primaria@nusefa.edu.pe</li>
+                        <li><i class="fas fa-phone"></i> Teléfono: +51 123 456 789</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+     
+    <footer class="footer-links mt-5">
+        <div class="social-icons">
+          <h2>Redes Sociales</h2>
+          <a href="https://www.facebook.com/30226nusefa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-google"></i></a>
+        </div>
+        <div class="footer-logo">
+          <img src="images/4.png" alt="Logo de la institución" width="100">
+        </div>
+        <div class="footer-info">
+          <p>Teléfono: 995551375</p>
+          <p>Ubicación: Jr. Los Bosques N° 101, Huancayo, Peru</p>
+          <p>Derechos Reservados &copy; 2024 | IE Nuestra Señora de Fátima</p>
+        </div>
+    </footer>
+    
+    <!-- jQuery primero, luego Popper.js, y finalmente Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+      <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+
+    <script>
+    // Detener el video de Apoyo Psicológico 
+        $('#videoPsicologiaModal').on('hidden.bs.modal', function () {
+          var videoSrc = $("#videoPsicologia").attr("src");
+          $("#videoPsicologia").attr("src", "");
+          $("#videoPsicologia").attr("src", videoSrc);
+        });
+      
+    // Detener el video de Trabajo Social 
+        $('#videoTrabajoSocialModal').on('hidden.bs.modal', function () {
+          var videoSrc = $("#videoTrabajoSocial").attr("src");
+          $("#videoTrabajoSocial").attr("src", "");
+          $("#videoTrabajoSocial").attr("src", videoSrc);
+        });
+    </script>
+</body>
+</html>

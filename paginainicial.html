@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nusefa</title>
+  <link rel="icon" href="images/4.png">
+  <link rel="stylesheet" href="estilosinicio.css">
+  <link rel="stylesheet" href="whatsapp.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>  
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div style="width: 1100px; margin:auto; display:flex;">
+      <a class="navbar-brand" href="#" style="display: flex;display: flex; gap: 20px;">
+        <img src="images/4.png" alt="Imagen" width="100" height="auto" style="display: block; margin: 0 auto; width: 55px;">
+              <span style="align-self: center;">
+                I.E.P.I.T Nuestra Señora de Fatima
+              </span> 
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="paginainicial.html">Inicio <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca.html">Acerca de Nuestra I.E.</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios Brindados
+            </a>
+            <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+              <a class="dropdown-item" href="primaria.html" target="_blank">Primaria</a>
+              <a class="dropdown-item" href="secundaria.html">Secundaria</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bienestar Integral
+            </a>
+            <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+              <a class="dropdown-item" href="psicologia.html" target="_blank">Psicologia</a>
+              <a class="dropdown-item" href="trabajosocial.html" target="_blank">Trabajo Social</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Contenido Principal dentro de una tabla -->
+  <div class="container mt-5">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>
+            <h2>Bienvenidos a la Institución Educativa Nuestra Señora de Fátima</h2>
+            <br>
+            <div class="row">
+              <div class="col-md-8">
+                <p class="main-content-text">Ubicada en el corazón de Pío Pata, El Tambo, nuestra institución se dedica a la formación 
+                  integral de nuestros estudiantes, combinando excelencia académica con valores humanos y espirituales. <br>
+                  En Nuestra Señora de Fátima, nos comprometemos a proporcionar una educación de calidad que fomente el 
+                  desarrollo intelectual, emocional y social de nuestros alumnos, preparándolos para enfrentar los desafíos 
+                  del futuro con confianza y responsabilidad. Nuestra comunidad educativa, formada por docentes calificados y 
+                  personal administrativo, trabaja en conjunto para crear un ambiente acogedor y propicio para el aprendizaje, 
+                  donde cada estudiante puede alcanzar su máximo potencial.</p>
+              </div>
+              <div class="col-md-4">
+                <img src="images/ejemplo.jpg" alt="Imagen Lateral" class="img-fluid">
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Título y Contadores -->
+            <div class="container text-center mt-5">
+              <h2 style="font-size: 2.5em; margin-bottom: 30px;">DATOS DE LA INSTITUCIÓN</h2>
+              <div class="counter-container">
+                <div class="counter">
+                  <h3 id="primaryCount" class="primary-counter" style="font-size: 2em;">0</h3>
+                  <p>Estudiantes de Primaria</p>
+                </div>
+                <div class="counter">
+                  <h3 id="teachersCount" class="teachers-counter" style="font-size: 2em;">0</h3>
+                  <p>Cantidad de Docentes</p>
+                </div>
+                <div class="counter">
+                  <h3 id="secondaryCount" class="secondary-counter" style="font-size: 2em;">0</h3>
+                  <p>Estudiantes de Secundaria</p>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- Sección Directivos -->
+        <tr>
+          <td>
+            <div class="container mt-5">
+            <h2 class="text-center mb-4">Directivos </h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="admin-card">
+                  <div class="admin-img-container">
+                    <img src="images/18.jpg" alt="Personal 1" class="img-fluid">
+                    <div class="overlay">
+                      <div class="text">
+                        <h5>Julian Adauto Rojas</h5>
+                        <p>Director </p>
+                        <p>Con más de 20 años de experiencia en la gestión educativa.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="admin-card">
+                  <div class="admin-img-container">
+                    <img src="images/19.jpg" alt="Personal 2" class="img-fluid">
+                    <div class="overlay">
+                      <div class="text">
+                        <h5>Maria García</h5>
+                        <p>Sub.Director Primaria</p>
+                        <p>Especialista en desarrollo curricular y liderazgo escolar.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="admin-card">
+                  <div class="admin-img-container">
+                    <img src="images/20.jpg" alt="Personal 3" class="img-fluid">
+                    <div class="overlay">
+                      <div class="text">
+                        <h5>Pedro Mendoza</h5>
+                        <p>Sub.Director Secundaria</p>
+                        <p>Encargado de las operaciones internas y el manejo de recursos.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+     </tr>
+        <tr>
+          <td>
+            <!-- Carrusel de Imágenes -->
+            <div class="carousel-container mt-4">
+              <h2>Plania Docentes</h2>
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Primaria</h5>
+                      <p>DOCENTES DE PRIMARIA</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Secundaria</h5>
+                      <p>DOCENTES DE SECUNDARIA</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Directivos</h5>
+                      <p>SUB DIRECTORES- DIRECTOR</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Siguiente</span>
+                </a>
+              </div>
+            </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Chat Bot -->
+    <section class="chat-whatsapp">
+      <input type="checkbox" name="whatsapp" id="whatsapp">
+      <label for="whatsapp">
+          <div class="btn-whatsapp">
+          </div>
+      </label>
+      <section class="contenedor-whatsapp">
+          <div class="cabecera-whatsapp">
+              <img src="images/wsp.png" alt="" class="logo-whatsapp">
+              <div class="texto-cabecera">
+                  <h4>Inicia una conversación</h4>
+                  <p>Hola! click sobre un miembro para chat vía <strong> Whatsapp</strong></p>
+              </div>
+          </div>
+          <h3>El equipo de GoDigital responde en minutos</h3>
+          <div class="contenido-whatsapp">
+              <a target="_blank" href="https://wa.link/oi4sg8" class="area gerencia">
+                  <div class="foto-godigital g-adm"></div>
+                  <div class="personal">
+                      <h4>Juan Carlos Medina Delzo</h4>
+                      <p>Gerente Administrativo</p>                   
+                  </div>
+              </a>
+              <a class="area venta" href="https://wa.link/2c6ikz" target="_blank">
+                  <div class="foto-godigital g-pro"></div>
+                  <div class="personal">
+                      <h4>Jorge A. Soto Mendoza</h4>
+                      <p>Gerente de Producción y Desarrollo Web</p>                   
+                  </div>
+              </a>
+              <a class="area venta" target="_blank" href="https://wa.link/mot3yj">
+                  <div class="foto-godigital g-ven"></div>
+                  <div class="personal">
+                      <h4>Josimar J. Quispe Cardenas</h4>
+                      <p>Gerente de Venta</p>                   
+                  </div>
+              </a>
+          </div>
+      </section>
+  </section>
+  <!-- Footer -->
+  <footer class="footer-links mt-5">
+    <div style="width: 1100px;margin:auto;display:flex; justify-content: space-between;">
+      <div class="footer-info">
+        <p>Teléfono: 995-551-375</p>
+        <p>Ubicación: Jr. Los Bosques N° 101, Huancayo, Peru</p>
+        <p>Derechos Reservados &copy; 2024 | I.E Nuestra Señora de Fátima</p>
+      </div>
+      <div class="footer-logo">
+        <img src="images/4.png" alt="Logo de la institución" width="100">
+      </div>
+      <br>
+      <div class="social-icons">
+        <h2>Redes Sociales</h2>
+        <a href="https://www.facebook.com/30226nusefa" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a> 
+      </div>
+    </div>
+  </footer>
+<!-- jQuery primero, luego Popper.js, y finalmente Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <!-- Script para los contadores -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const primaryCount = document.getElementById("primaryCount");
+      const secondaryCount = document.getElementById("secondaryCount");
+      const teachersCount = document.getElementById("teachersCount");
+
+      function animateCounter(element, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          element.textContent = Math.floor(progress * (end - start) + start);
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+
+      animateCounter(primaryCount, 0, 520, 2000);  // Ajustar los valores finales según sea necesario
+      animateCounter(secondaryCount, 0, 502, 2000);  // Ajustar los valores finales según sea necesario
+      animateCounter(teachersCount, 0, 61, 2000);  // Ajustar los valores finales según sea necesario
+    });
+  </script>
+</body>
+</html>

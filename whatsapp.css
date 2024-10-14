@@ -1,0 +1,234 @@
+
+		.contenedor-whatsapp{
+			display: grid;
+			grid-template-columns:auto;
+			grid-template-rows: auto auto auto;
+			box-shadow: 0px 10px 10px 4px rgba(0,0,0,0.04);
+			width: 350px;
+			grid-gap: 15px;
+			border-radius: 8px;
+			overflow: hidden;
+			position: fixed;
+			visibility: hidden;
+			right: 100px;
+			bottom: 100px;
+			animation: decrecer .3s linear;
+			transition: .3s;
+			z-index: 500;
+			background: white;
+		}
+		@keyframes decrecer {
+			0%{transform: translateY(0px);
+ 				opacity:1;}
+ 			
+ 			100%{transform: translateY(50px);
+ 				opacity: 0;
+ 			}
+		}
+		@-webkit-keyframes decrecer {
+			0%{transform: translateY(0px);
+ 				opacity:1;}
+ 			
+ 			100%{transform: translateY(50px);
+ 				opacity: 0;
+ 			}
+		}
+		.cabecera-whatsapp{
+			grid-column: 1/2;
+			grid-row: 1/2;
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-template-rows: 1fr;
+			grid-gap: 0px 15px;
+			background: #2db742;
+			padding: 20px;
+		}
+				.cabecera-whatsapp img{
+					grid-column: 1/2;
+					grid-row: 1/2;
+					width: 55px;
+				}
+				.cabecera-whatsapp .texto-cabecera{
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: auto auto;
+					line-height: 20px;
+					color: white;
+					font-weight: normal;
+				}
+						.cabecera-whatsapp .texto-cabecera h1{
+							grid-column: 1/2;
+							grid-row: 1/2;
+							font-size: 16px;
+							margin-bottom: 6px;
+							color: white;
+
+						}
+						.cabecera-whatsapp .texto-cabecera p{
+							grid-column: 1/2;
+							grid-row: 2/3;
+							font-size: 12px;
+						}
+		.contenedor-whatsapp h3{
+			grid-row: 2/3;
+			grid-column: 1/2;
+			font-size: 12px;
+			color: #a5abb7;
+			font-weight: normal;
+			padding-left: 20px;
+		}
+		.contenido-whatsapp{
+			grid-column: 1/2;
+			grid-row: 3/4;
+			grid-gap: 15px 0px;
+			display: grid;
+			padding: 10px 20px 15px 20px;
+		}
+				.area{
+					display: grid;
+					grid-template-columns: auto 1fr;
+					grid-template-rows: 1fr;
+					grid-gap: 0 15px;
+					background: #7bc66c21;
+					padding: 5px;
+					border-radius: 4px;
+					border-left: 3px solid #2db742;
+					text-decoration:  none;
+				}
+				.area:hover{
+					background: white;
+					cursor: pointer;
+					box-shadow: 0px 7px 15px 1px rgba(55,62,70,0.07);
+				}
+				.area:hover .personal h4{
+					font-weight: 400;
+				}
+				.area:hover .foto-godigital{
+					transform: scale(1.05);
+				}
+						.area .foto-godigital{
+							width: 48px;
+							height: 48px;
+							border-radius: 50%;
+							background-size:cover;
+						}
+						.g-adm{
+							background: url('../img/juan.png') center center no-repeat;
+						}
+						.g-pro{
+							background: url('../img/Jorge.png') center center no-repeat;
+						}
+						.g-ven{
+							background: url('../img/Josimar.png') center center no-repeat;
+						}
+						.area .personal{
+							display: grid;
+							grid-template-rows: 1fr 1fr;
+						}
+						.area .personal h4{
+							align-self: center;
+							font-size: 15px;
+							font-weight: 300;
+							color: black;
+						}
+						.area .personal p{
+							align-self: center;
+							color: #a5abb7;
+							font-size: 11px;
+						}
+.btn-whatsapp{
+	position: fixed;
+	right: 25px;
+	bottom: 155px; 
+	width: 60px;
+	height: 60px;
+	z-index: 50;
+	animation-duration: 2s; 
+	animation-delay: 0ms; 
+	animation-name: derechaaizquierda;
+	background: #2db742;
+	border-radius: 50%;	
+
+}
+		.btn-whatsapp:before{
+			content: '';
+			background: #2db742 url('images/wsp.png') center center no-repeat;
+			position: relative;
+			width: 100%;	
+			height: 100%;
+			background-size: 30px;
+			display: inline-block;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: .5s;
+		}
+		.btn-whatsapp:hover:before{
+			animation: rotar1 1s linear;
+
+		}
+@keyframes rotar1{
+			0%{transform: rotate(0deg);}
+			20%{transform: rotate(20deg);}
+			40%{transform: rotate(-25deg);}
+			60%{transform: rotate(25deg);}
+			80%{transform: rotate(-20deg);}
+			100%{transform: rotate(0deg);}
+		}
+		#whatsapp:checked ~ * .btn-whatsapp:before{
+			content: '';
+			background: #2db742 url('../img/principal/close.png') center center no-repeat;	
+			background-size: 42px;	
+			transition: .5s;
+}
+@keyframes esconder {
+	0%{transform: scale(1);}
+	100%{transform: scale(0);}
+}
+@-webkit-keyframes esconder{
+	0%{transform: scale(1);}
+	100%{transform: scale(0);}
+}
+#whatsapp{
+	display: none;
+}
+
+ 
+ input[type="checkbox"]:checked ~ section{
+ 	visibility: visible;
+ 	animation: crecer .3s linear;
+ }
+ @keyframes crecer {
+ 	0%{transform: translateY(50px);
+ 		opacity:0;}
+ 	100%{transform: translateY(0px);
+ 		opacity:1;}
+ }
+@media only screen and (max-width:600px){
+	.contenedor-whatsapp{
+		width: 300px;
+		right: 26px;
+    	bottom: 65px;
+    	grid-gap: 10px;
+	}
+	.cabecera-whatsapp img{
+		width: 30px;
+	}
+	.cabecera-whatsapp{
+		padding: 20px 35px;
+
+	}
+	.area .personal h4{
+		font-size: 12px;
+	}
+	.area .personal p{
+		align-self: start;	
+		font-size: 10px;
+	}
+	.texto-cabecera{
+		font-size: 15px;
+	}
+	.contenido-whatsapp{
+		padding: 10px 20px 25px 20px;
+	}
+
+}

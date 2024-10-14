@@ -1,0 +1,70 @@
+.navbar {
+    font-size: 1.0em; /* Tamaño de la barra de navegación */
+    background: #354E76;
+  }
+  .navbar-light .navbar-brand {
+    font-size: 1.2em; /* Tamaño del nombre de la institución */
+    margin: 0 auto; 
+    color: #ffffff !important;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1em; 
+    color:  #ffffff !important;
+    
+  }
+  .social-icons a {
+    margin: 0 10px;
+    color: #fdfdfd;
+  }
+
+.carrusel img{
+  object-fit: cover;
+}
+
+  /* Footer */
+  footer {
+  font-family: 'Arial Narrow', sans-serif; 
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #354E76;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff; 
+  }
+  .footer-logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-info p {
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff; 
+  }
+  .social-icons a {
+    color: #ffffff; 
+    font-weight: bold;
+  }
+  .carrusel{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .carrusel img {
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+  }
+  #programas-brindados img {
+    border: 2px solid #007bff;
+    padding: 5px;
+  }
+  
+  #programas-brindados p {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  

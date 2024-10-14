@@ -1,0 +1,268 @@
+/* Estilos */
+.carousel-item img {
+  max-height: 350px; /* Tamaño de las imágenes del carrusel */
+  object-fit: cover;
+}
+.carousel-container {
+  max-width: 100%; /* Ancho del carrusel */
+  margin: 0 auto;
+}
+.navbar {
+  font-size: 1em; /* Tamaño de la barra de navegación */
+  background: #354e76;
+}
+/* Nuevo navbar 
+.navbar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  width: 40px; /* Ajustar el tamaño de la imagen para pantallas pequeñas 
+}
+
+.navbar-brand span {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.img-custom {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.counter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.counter {
+  flex: 1 1 30%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .counter {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+}
+.admin-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .admin-card img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 35px;
+  }
+
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .admin-card img {
+    max-width: 100%;
+  }
+}
+hasta aqui*/
+
+.navbar-light .navbar-brand {
+  font-size: 1.2em; /* Tamaño del nombre de la institución */
+  margin: 0 auto;
+  color: #ffffff !important;
+}
+.navbar-nav .nav-link {
+  font-size: 1em;
+  color: #ffffff !important;
+}
+.social-icons a {
+  margin: 0 10px;
+  color: #fdfdfd;
+}
+/* Footer */
+footer {
+  font-family: "Arial Narrow", sans-serif;
+  height: 150px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #354e76;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff; /* Puede ser negro */
+}
+.footer-logo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-info p {
+  margin: 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+.social-icons a {
+  color: #ffffff;
+  font-weight: bold;
+}
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+  font-family: "Arial", sans-serif; /* Puedes cambiar la fuente según tu preferencia */
+}
+
+.counter {
+  text-align: center;
+  flex: 1;
+}
+
+.primary-counter,
+.secondary-counter {
+  color: #354e76;
+  font-size: 2.5em;
+}
+
+.teachers-counter {
+  color: #ff5733;
+  font-size: 2.5em;
+}
+
+.counter p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.main-content-text {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.img-custom {
+  width: 110%; /* Ajusta el ancho de la imagen */
+  max-width: 350px;
+  height: auto;
+}
+/* Estilo para imágenes en círculo */
+.img-circle {
+  border-radius: 50%;
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+/* Ajusta del personal administrativo*/
+.admin-img-container {
+  position: relative;
+  width: 100%;
+}
+.admin-img-container img {
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.admin-img-container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.admin-img-container {
+  position: relative;
+  width: 100%;
+}
+.admin-img-container img {
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.admin-img-container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
